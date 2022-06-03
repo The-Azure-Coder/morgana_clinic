@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/appoint.css">
+</head>
+<body>
+    <div class="appoint-back">
+    <div class="appoint-image">
+        <h1>Make an Appointment</h1>
+    </div>
+
+    <form action="/appoint/book" method="post" class="appoint-form">
+        <div class="section1">
+            <div class="personal">
+                <label for="">First Name</label>
+                <input type="text" name="first_nm">
+                <label for="">last Name</label>
+                <input type="text" name="last_nm">
+            </div>
+            <div class="add">
+                <label for="">Gender</label>
+                <input type="text" name="gender">
+                <label for="">Address</label>
+                <input type="text" name="address">
+            </div>
+        </div>
+        
+        <label for="">Phone Number</label>
+        <input type="text" name="phone_num">
+
+        <input type="hidden" value="appoint" name="app_id">
+         
+        <label for="">Email</label>
+        <input type="text" name="email">
+        
+
+    <label for="">Department</label>
+    <select name="department_id" id="">
+        <%department.forEach((depart)=>{ %>
+            <option value="<%=depart.id%>"><%=depart.department%></option>
+        <%})%>
+       
+    </select>
+        <label for="">Procedure</label>
+        <select name="procedure_id" id="">
+            <%procedure.forEach((pro)=>{ %>
+                <option  value="<%=pro.id%>"><%=pro.procedure%></option>
+           <% }) %>
+           </select>
+        <button class="btn" type="submit">book Appointment</button>
+    </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/appoint.css">
+</head>
+<body>
+    <div class="appoint-back">
+    <div class="appoint-image">
+        <h1>Make an Appointment</h1>
+    </div>
+
+    <form action="/dashboard/update" method="post" class="appoint-form">
+        <div class="section1">
+            <div class="personal">
+                <label for="">First Name</label>
+                <input type="text" value="<%=appointment.first_nm%>" name="first_nm">
+                <label for="">last Name</label>
+                <input type="text"  value="<%=appointment.last_nm%>" name="last_nm">
+            </div>
+            <div class="add">
+                <label for="">Gender</label>
+                <input type="text"  value="<%=appointment.gender%>" name="gender">
+                <label for="">Address</label>
+                <input type="text"  value="<%=appointment.address%>" name="address">
+            </div>
+        </div>
+        
+        <label for="">Phone Number</label>
+        <input type="text"  value="<%=appointment.phone_num%>" name="phone_num">
+
+        <label for="">Appointment Date</label>
+        <input type="text"  value="<%=appointment.appointment_date%>" name="appointment_date">
+         
+        <label for="">Email</label>
+        <input type="text" value="<%=appointment.email%>" name="email">
+
+        <input type="hidden" value="<%=appointment.app_id%>" name="app_id">
+
+        <input type="hidden" value="<%=appointment.pro_id%>" name="procedure_id">
+
+        <input type="hidden" value="<%=appointment.depart_id%>" name="department_id">
+
+        <input type="hidden" value="<%=appointment.doc_id%>" name="doctor_id">
+
+        <input type="hidden" value="<%=appointment.pat_id%>" name="patient_id">
+        
+
+    <label for="">Department</label>
+    <select  value="<%=appointment.department_id%>" id="">
+            <option value="<%=appointment.department%>"><%=appointment.department%></option>
+       
+    </select>
+        <label for="">Procedure</label>
+        <select value="<%=appointment.procedure_id%>">
+                <option  value="<%=appointment.procedure%>"><%=appointment.procedure%></option>
+           </select>
+        <button class="btn" type="submit">Uodate Appointment</button>
+    </form>
+    </div>
+    
+</body>
+</html>

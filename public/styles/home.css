@@ -1,0 +1,59 @@
+.img1{
+    margin-top: 2.5rem;
+     background-image: url('/images/pro.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 40rem;
+  }
+  
+  .img1 h2{
+    position: relative;
+    left: 55%;
+    top: 30%;
+    background-color: var(--darkgreen);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding: 10px;
+    width: fit-content;
+    color: white;
+  }
+
+  .img1 h3{
+    position: relative;
+    left: 50%;
+    top: 35%;
+    background-color: var(--lightgreen);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding: 10px;
+    width: fit-content;
+    color: white;
+  }
+
+.hours {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+    background-color: rgb(14, 183, 212);
+    height: 8rem;
+}
+
+.hours span {
+    display: block;
+    border-top: 2px solid white;
+    padding-top: 5px;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.hours i {
+    color: white;
+    font-size: 3rem;
+}
+
+.hours label {
+    color: white;
+    font-size: 1.5rem;
+}
