@@ -35,6 +35,6 @@ conn.query( authQuery,[email,password],(err,rows)=>{
 
 router.get('/logout', function (req, res) {
     req.session.destroy();
-    res.redirect('/login');
+    res.redirect('/');
 });
 module.exports = router

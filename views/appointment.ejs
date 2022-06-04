@@ -7,6 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles/appoint.css">
 </head>
+
+<% if(messages.error){ %>
+    <script>
+      Swal.fire({
+icon: 'error',
+title: 'Sorry...',
+text: 'There is no more of this book available!',
+footer: '<a href="">Why do I have this issue?</a>'
+})
+    </script>
+<% } else if(messages.success){ %>
+<script>
+    Swal.fire({
+position: 'top-end',
+icon: 'success',
+title: 'Appointment as been booked your patient id is',
+showConfirmButton: false,
+timer: 1500
+})
+</script>
+<% }%>
 <body>
     <div class="appoint-back">
     <div class="appoint-image">

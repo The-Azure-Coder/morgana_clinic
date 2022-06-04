@@ -131,8 +131,8 @@ router.post('/update',(req,res)=>{
 
 })
 
-router.get('/delete/:pat_id',(req,res)=>{
-    let deleteQuery1 = `DELETE FROM patients WHERE id =${req.params.pat_id}`
+router.get('/delete/:app_id',(req,res)=>{
+    let deleteQuery1 = `DELETE FROM appointments WHERE id =${req.params.app_id}`
     conn.query(deleteQuery1,(err,deleteRows)=>{
         if(err) throw err
             res.redirect('/dashboard')

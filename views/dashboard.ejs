@@ -29,7 +29,7 @@
                         <p>A Place where you can view the appointments you've booked, modify and Delete them or add more if
                             necessary</p>
 
-                            <button>book Another</button>
+                           <a href="/another">book Another</a> 
 
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <td>$<%=appointment.estimated_cost%>.00</td>
                 <td>
                     <a href="/dashboard/edit/<%=appointment.app_id%>">Edit</a>
-                    <a href="/dashboard/delete/<%=appointment.pat_id%>">Delete</a>
+                    <a href="/dashboard/delete/<%=appointment.app_id%>">Delete</a>
                 </td>
             </tr>
         <%})%>

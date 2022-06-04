@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/department.css">
+</head>
+<body>
+    <div class="card-con">
+        <% departments.forEach((department)=>{ %>
+            <a href="/depart/sort/<%=department.id%>">
+                <div class="card">
+                   <h1><%=department.department%></h1>
+                  <h1><%=department.procedure%></h1>
+               </div>
+            </a>
+       <%})%>
+    </div> 
+</body>
+</html>

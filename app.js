@@ -4,7 +4,7 @@ var app = express()
 var path = require('path')
 var cookieParser = require('cookie-parser');
 const session = require('express-session');
-const flash = require('express-flash')
+var flash = require('express-flash')
 
 
 app.use(layout)
@@ -33,11 +33,15 @@ var homeRouter = require('./routes/home')
 var appointRouter = require('./routes/appoint')
 var loginRouter = require('./routes/login')
 var dashRouter = require('./routes/dashboard')
+var anotherRouter = require('./routes/another')
+var departRouter = require('./routes/department')
 
 app.use('/',homeRouter)
 app.use('/appoint',appointRouter)
 app.use('/login',loginRouter)
 app.use('/dashboard',dashRouter)
+app.use('/another',anotherRouter)
+app.use('/depart',departRouter)
 
 
 const port = process.env.PORT || 5000
