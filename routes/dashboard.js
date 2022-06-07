@@ -39,7 +39,7 @@ AND
    dp.id = at.department_id
 `
 
-let sqlQuery2 = `SELECT count(pt.procedure) AS procedure_num,  avg(pt.estimated_cost) AS average_cost from morgana.procedures pt`
+let sqlQuery2 = `SELECT count(pt.procedure) AS procedure_num, min(pt.estimated_cost) AS max_cost, round(avg(pt.estimated_cost),0) AS average_cost from morgana.procedures pt`
 conn.query(sqlQuery,(err,allrows)=>{
     if(err) throw err
     conn.query(sqlQuery2,(err,agrows)=>{

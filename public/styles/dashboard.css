@@ -49,15 +49,13 @@
     }
     .profileCard {
         background-color: #fff;
-
         position: relative;
         top: -14rem;
-
         display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
         -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
-        margin-left: 4rem;
+        margin-left: 2rem;
         width: fit-content;
         border-radius: .9rem;
         padding: 30px;
@@ -67,17 +65,33 @@
     .analysis {
         background-color: #fff;
         position: relative;
+        top: -4rem;
         display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
         -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
-        margin-left: 25rem;
-        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
         width: 24rem;
         height: 14rem;
         border-radius: .9rem;
         padding: 10px;
+    }
 
+    .analysis2 {
+        background-color: #fff;
+        position: relative;
+        top: -4rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+        -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.118);
+        margin-left: 4rem;
+        margin-top: 3rem;
+        width: 20rem;
+        height: 14rem;
+        border-radius: .9rem;
+        padding: 10px;
     }
     .profileImg {
         overflow: hidden;
@@ -105,9 +119,20 @@
             .profile-details  p {
                     display: block;
                     text-align: center;
-                    font-size: 14px;
+                    font-size: 15px;
                     width: 25rem;
-                    color: #777;
+                    color: black;
+                }
+
+                .analysis .profile-details p{
+                    display: block;
+                    text-align: center;
+                    font-size: 15px;
+                    width: 25rem;
+                    color: black;
+                    position: relative;
+                    left: -5.5rem;
+
                 }
 
         .analysis .profile-details .info i{
@@ -115,6 +140,14 @@
             font-size: 30px;
             font-weight: bold;
             padding-right: .4rem;
+        }
+            
+        .analysis2 .profile-details .info i{
+            color: #0077B5;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: .4rem;
+           
         }
             
 
